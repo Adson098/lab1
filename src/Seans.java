@@ -1,9 +1,11 @@
+import java.io.Serializable;
 import java.lang.instrument.ClassDefinition;
 import java.time.LocalTime;
 import java.util.Date;
 import java.util.HashMap;
 
-public class Seans {
+public class Seans implements Serializable {
+    private static final long serialVersionUID = -7887612267521882049L;
     // Zmienne
     String title;
     Date day;
