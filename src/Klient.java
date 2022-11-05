@@ -1,13 +1,20 @@
+import java.io.Serializable;
 import java.util.List;
 
-public class Klient {
-    private String nazwisko;
-    private String email;
-    private String telefon;
-    private String seans;
-    private List<String> miejsca;
+public class Klient implements Serializable {
+    private static final long serialVersionUID = -7887612267521882048L;
+    String nazwisko;
+    String email;
+    String telefon;
+    String seans;
+    List<String> miejsca;
 
-    public Klient(){
-        System.out.print("gowno");
+    public Klient(String nazwisko, String email, String telefon, String seans, List<String> miejsca){
+        this.nazwisko = nazwisko;
+        this.email = email;
+        this.telefon = telefon;
+        this.seans = seans;
+        this.miejsca = miejsca;
+        System.out.print("");
     }
 }

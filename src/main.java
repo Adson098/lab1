@@ -15,13 +15,16 @@ public class main {
         DataInputStream in = new DataInputStream(f);
         BufferedReader r = new BufferedReader(new InputStreamReader(in));
         String strLine;
-        String dane="";
-        while ((strLine = r.readLine()) != null)
+        String dane = "";
+        while ((strLine = r.readLine()) != null) {
             dane += strLine;
+        }
         in.close();
     }
 
-    public static void main(String []args){
-        System.out.println("gowno");
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        {
+            System.out.println("gowno");
+        }
     }
 }
